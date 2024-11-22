@@ -1,0 +1,6 @@
+@GSNet24_HostAddress = http://localhost:5008
+
+GET {{GSNet24_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
