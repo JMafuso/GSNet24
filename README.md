@@ -31,14 +31,6 @@ Edite o arquivo appsettings.json com as configurações do banco de dados Oracle
   "AllowedHosts": "*"
 }
 
-Migrações de Banco de Dados
-
-1. Adicione uma nova migração:
-   dotnet ef migrations add InitialCreate
-
-2. Atualize o banco de dados:
-   dotnet ef database update
-
 Endpoints da API
 
 GET /aparelho/List  
