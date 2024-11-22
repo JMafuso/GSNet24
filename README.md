@@ -1,17 +1,17 @@
 GSNet24
 
-GSNet24 é uma API Web .NET Core projetada para gerenciar dispositivos eletrônicos. Ela utiliza o banco de dados Oracle e segue o padrão de repositório para facilitar a manutenção e a organização do código.
+GSNet24 é uma API Web .NET Core projetada para gerenciar o uso de dispositivos eletrônico. Ela utiliza o banco de dados Oracle e segue o padrão de repositório para facilitar a manutenção e a organização do código.
 
 Pré-requisitos
 
-- .NET SDK 6.0 ou superior
+- .NET SDK 8.0
 - Banco de Dados Oracle configurado
 - Visual Studio 2019 ou superior (ou outro editor, como Visual Studio Code)
 
 Instalação
 
 1. Clone o repositório:
-   git clone https://github.com/seuusuario/GSNet24.git
+   git clone https://github.com/JMafuso/GSNet24.git
    cd GSNet24
 
 2. Instale os pacotes necessários:
