@@ -1,42 +1,26 @@
 GSNet24
-GSNet24 é um projeto de API Web .NET Core projetado para gerenciar dispositivos eletrônicos. Ele utiliza Oracle como seu sistema de gerenciamento de banco de dados e segue o padrão de repositório para código limpo e de fácil manutenção.
 
-Índice
+GSNet24 é uma API Web .NET Core projetada para gerenciar dispositivos eletrônicos. Ela utiliza o banco de dados Oracle e segue o padrão de repositório para facilitar a manutenção e a organização do código.
+
 Pré-requisitos
+
+- .NET SDK 6.0 ou superior
+- Banco de Dados Oracle configurado
+- Visual Studio 2019 ou superior (ou outro editor, como Visual Studio Code)
 
 Instalação
 
+1. Clone o repositório:
+   git clone https://github.com/seuusuario/GSNet24.git
+   cd GSNet24
+
+2. Instale os pacotes necessários:
+   dotnet restore
+
 Configuração
 
-Migrações de Banco de Dados
+Edite o arquivo appsettings.json com as configurações do banco de dados Oracle:
 
-Executando a Aplicação
-
-Endpoints da API
-
-Licença
-
-Pré-requisitos
-.NET SDK 6.0 ou superior
-
-Banco de Dados Oracle
-
-Visual Studio 2019 ou superior
-
-Instalação
-Clone o repositório:
-
-bash
-git clone https://github.com/seuusuario/GSNet24.git
-cd GSNet24
-Instale os pacotes necessários:
-
-bash
-dotnet restore
-Configuração
-Abra appsettings.json e configure sua conexão com o banco de dados Oracle:
-
-json
 {
   "ConnectionStrings": {
     "OracleConnection": "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=oracle.fiap.com.br)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=ORCL)));User Id=SEU_USUARIO;Password=SUA_SENHA;"
@@ -49,45 +33,43 @@ json
   },
   "AllowedHosts": "*"
 }
+
 Migrações de Banco de Dados
-Adicione uma nova migração:
 
-bash
-dotnet ef migrations add InitialCreate
-Atualize o banco de dados:
+1. Adicione uma nova migração:
+   dotnet ef migrations add InitialCreate
 
-bash
-dotnet ef database update
+2. Atualize o banco de dados:
+   dotnet ef database update
+
 Executando a Aplicação
-Compile e execute a aplicação:
 
-bash
-dotnet run
-A aplicação será iniciada e você poderá acessar os endpoints da API.
+1. Inicie a aplicação:
+   dotnet run
+
+2. Acesse a API em:
+   https://localhost:5001
 
 Endpoints da API
-AparelhoController
-GET /aparelho/List - Recupera uma lista de todos os aparelhos.
 
-POST /aparelho/Add - Adiciona um novo aparelho.
+GET /aparelho/List  
+Retorna todos os aparelhos cadastrados.
 
-Exemplo de corpo da requisição:
-
-json
+POST /aparelho/Add  
+Adiciona um novo aparelho. Exemplo de corpo da requisição:
 {
   "NomeAparelho": "Smartphone",
   "TempoUso": 120
 }
-PUT /aparelho/Update - Atualiza um aparelho existente.
 
-Exemplo de corpo da requisição:
-
-json
+PUT /aparelho/Update  
+Atualiza os dados de um aparelho. Exemplo de corpo da requisição:
 {
   "AparelhoId": 1,
   "NomeAparelho": "Smartphone",
   "TempoUso": 150
 }
-DELETE /aparelho/Delete - Exclui um aparelho pelo ID.
 
-Exemplo de parâmetro de consulta: ?id=1
+DELETE /aparelho/Delete  
+Exclui um aparelho pelo ID. Exemplo de uso:
+?id=1
