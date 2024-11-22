@@ -13,10 +13,7 @@ Instalação
 1. Clone o repositório:
    git clone https://github.com/JMafuso/GSNet24.git
    cd GSNet24
-
-2. Instale os pacotes necessários:
-   dotnet restore
-
+   
 Configuração
 
 Edite o arquivo appsettings.json com as configurações do banco de dados Oracle:
@@ -58,16 +55,16 @@ Retorna todos os aparelhos cadastrados.
 POST /aparelho/Add  
 Adiciona um novo aparelho. Exemplo de corpo da requisição:
 {
-  "NomeAparelho": "Smartphone",
-  "TempoUso": 120
+  "NomeAparelho": "Microondas",
+  "TempoUso": 12
 }
 
 PUT /aparelho/Update  
 Atualiza os dados de um aparelho. Exemplo de corpo da requisição:
 {
   "AparelhoId": 1,
-  "NomeAparelho": "Smartphone",
-  "TempoUso": 150
+  "NomeAparelho": "Microondas",
+  "TempoUso": 13
 }
 
 DELETE /aparelho/Delete  
