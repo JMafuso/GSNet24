@@ -39,14 +39,6 @@ Migrações de Banco de Dados
 2. Atualize o banco de dados:
    dotnet ef database update
 
-Executando a Aplicação
-
-1. Inicie a aplicação:
-   dotnet run
-
-2. Acesse a API em:
-   https://localhost:5001
-
 Endpoints da API
 
 GET /aparelho/List  
