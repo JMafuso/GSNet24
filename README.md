@@ -1,6 +1,6 @@
 GSNet24
 
-GSNet24 é uma API Web .NET Core projetada para gerenciar o uso de dispositivos eletrônico. Ela utiliza o banco de dados Oracle e segue o padrão de repositório para facilitar a manutenção e a organização do código.
+GSNet24 é uma API Web .NET Core projetada inicialmente para computar o tempo uso de dispositivos eletrônicos. Ela utiliza o banco de dados Oracle e segue o padrão de repositório para facilitar a manutenção e a organização do código.
 
 Pré-requisitos
 
