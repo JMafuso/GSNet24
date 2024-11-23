@@ -1,5 +1,7 @@
 GSNet24
 
+Video pitch: https://youtu.be/K3eb_SViHF0
+
 GSNet24 é uma API Web .NET Core projetada inicialmente para armazenar e computar o tempo de uso de eletrônicos. Ela utiliza o banco de dados Oracle e segue o padrão de repositório para facilitar a manutenção e a organização do código.
 
 Pré-requisitos
